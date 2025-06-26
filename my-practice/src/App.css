@@ -15,7 +15,6 @@
 
 .App-header {
   background-color: #ae7d2d;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -26,6 +25,27 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.Namecard-generator {
+  display: flex;
+}
+
+.Input-form {
+  background-color: lightblue;
+  width: 50%;
+  padding: 5%;
+}
+
+.Input-field {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.Namecard {
+  background-color: beige;
+  width: 50%;
 }
 
 @keyframes App-logo-spin {

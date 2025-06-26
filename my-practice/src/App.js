@@ -8,11 +8,32 @@ function App() {
         <h1>this is header</h1>
       </header>
 
-      <body>
+      <div className="Namecard-generator">
+        <form className="Input-form">
+          <div className='Input-field'> 
+            <p>your name</p>
+            <input placeholder='enter name'></input>
+          </div>
+          <div className='Input-field'> 
+            <p>your job</p>
+            <input placeholder='enter job'></input>
+          </div>
+          <div className='Input-field'> 
+            <p>your location</p>
+            <input placeholder='enter location'></input>
+          </div>
 
 
+        </form>
 
-      </body>
+        <div className="Namecard">
+          <img />
+          <h3>name</h3>
+
+        </div>
+
+
+      </div>
     </div>
   );
 }
