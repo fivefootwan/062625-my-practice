@@ -35,6 +35,10 @@
   background-color: lightblue;
   width: 50%;
   padding: 5%;
+  display: flex;  
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
 }
 
 .Input-field {
@@ -46,6 +50,19 @@
 .Namecard {
   background-color: beige;
   width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 5%;
+}
+
+.Profile-pic {
+  border-radius: 50px;
+  background-color: black;
+  width: 70px;
+  height: 70px;
+  opacity: 25%;
 }
 
 @keyframes App-logo-spin {
