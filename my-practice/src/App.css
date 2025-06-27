@@ -16,7 +16,7 @@
 }
 
 .App-header {
-  background-color: #ae7d2d;
+  background-color: #ff6f61;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -51,12 +51,14 @@
   display: flex;
   gap: 10px;
   align-items: center;
+  font-size: 14px;
 }
 
 .Namecard {
-  background-color: #fcedd6;
+  background-color: #ffeadd;
   border-radius: 25px;
-  border: 1px solid black;
+  border: 1px solid #ffd6cc;
+  color:#333;
   width: 50vw;
   display: flex;
   flex-direction: column;

@@ -11,40 +11,40 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>this is header</h1>
+        <h1>Namecard Generator</h1>
       </header>
 
       <div className="Namecard-generator">
         <form className="Input-form">
           <div className='Input-field'> 
-            <p>your name</p>
-            <input placeholder='enter name' value={name} onChange={(e) => setName(e.target.value)}></input>
+            <p>Enter your name:</p>
+            <input placeholder='e.g. John Smith' value={name} onChange={(e) => setName(e.target.value)}></input>
           </div>
 
           <div className='Input-field'> 
-            <p>your job</p>
-            <input placeholder='enter job' value={job} onChange={(e) => setJob(e.target.value)}></input>
+            <p>Enter your job</p>
+            <input placeholder='e.g. Founder' value={job} onChange={(e) => setJob(e.target.value)}></input>
           </div>
 
           <div className='Input-field'> 
-            <p>your location</p>
-            <select placeholder='enter location' value={location} onChange={(e) => setLocation(e.target.value)} >
-              <option>select an option</option>
+            <p>Choose your location</p>
+            <select placeholder='Choose a location' value={location} onChange={(e) => setLocation(e.target.value)} >
+              <option>Select a city</option>
               <option value="city 1">city 1</option>
               <option value="city 2">city 2</option>
             </select>
           </div>
 
           <div className='Input-field'>
-            <p>choose a background color</p>
-            <input placeholder="input hex" value={bgcolor} onChange={(e) => setBgcolor(e.target.value)}></input>
+            <p>Customise a background color</p>
+            <input placeholder="e.g. #fffaf4" value={bgcolor} onChange={(e) => setBgcolor(e.target.value)}></input>
 
           </div>
 
 
         </form>
 
-        <div className="Namecard" style={{ backgroundColor: bgcolor === '' ? '#fcedd6' : bgcolor }}>
+        <div className="Namecard" style={{ backgroundColor: bgcolor === '' ? '#ffeadd' : bgcolor }}>
           <div className='Profile-pic'></div>
           <p id="Namecard-name">{name === '' ? 'type in name' : name}</p>
           <p id="Namecard-job">{job === '' ? 'type in job on the form on the left' : job}</p>
