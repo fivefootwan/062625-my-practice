@@ -6,7 +6,17 @@ function App() {
   const [name, setName] = useState('');
   const [job, setJob] = useState('');
   const [location, setLocation] = useState('');
-  const [bgcolor, setBgcolor] = useState('')
+  const [bgcolor, setBgcolor] = useState('');
+  const [savedCards, setSavedCards] = useState([]);
+
+  const saveCard = () => {
+    const newCard = {name, job, location, bgcolor};
+    setSavedCards(prev => [newCard, ...prev]);
+    setName('');
+    setJob('');
+    setLocation('');
+    setBgcolor('');
+  }
 
   return (
     <div className="App">
@@ -40,11 +50,12 @@ function App() {
             <input placeholder="e.g. #fffaf4" value={bgcolor} onChange={(e) => setBgcolor(e.target.value)}></input>
 
           </div>
+          <button>Save Namecard</button>
 
 
         </form>
 
-        <div className="Namecard" style={{ backgroundColor: bgcolor === '' ? '#ffeadd' : bgcolor }}>
+        <div className="Namecard-preview" style={{ backgroundColor: bgcolor === '' ? '#ffeadd' : bgcolor }}>
           <div className='Profile-pic'></div>
           <p id="Namecard-name">{name === '' ? 'type in name' : name}</p>
           <p id="Namecard-job">{job === '' ? 'type in job on the form on the left' : job}</p>

@@ -54,7 +54,7 @@
   font-size: 14px;
 }
 
-.Namecard {
+.Namecard-preview {
   background-color: #ffeadd;
   border-radius: 25px;
   border: 1px solid #ffd6cc;
@@ -68,7 +68,7 @@
   margin: 2%
 }
 
-.Namecard * {
+.Namecard-preview * {
   margin: 4px;
   padding: 0;
 }
