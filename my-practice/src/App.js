@@ -6,6 +6,7 @@ function App() {
   const [name, setName] = useState('');
   const [job, setJob] = useState('');
   const [location, setLocation] = useState('');
+  const [bgcolor, setBgcolor] = useState('')
 
   return (
     <div className="App">
@@ -34,14 +35,20 @@ function App() {
             </select>
           </div>
 
+          <div className='Input-field'>
+            <p>choose a background color</p>
+            <input placeholder="input hex" value={bgcolor} onChange={(e) => setBgcolor(e.target.value)}></input>
+
+          </div>
+
 
         </form>
 
-        <div className="Namecard">
+        <div className="Namecard" style={{ backgroundColor: bgcolor === '' ? '#fcedd6' : bgcolor }}>
           <div className='Profile-pic'></div>
-          <h3>{name === '' ? 'type in name' : name}</h3>
-          <h3>{job === '' ? 'type in job on the form on the left' : job}</h3>
-          <h3>{location === '' ? 'select in location on the form on the left' : location}</h3>
+          <p id="Namecard-name">{name === '' ? 'type in name' : name}</p>
+          <p id="Namecard-job">{job === '' ? 'type in job on the form on the left' : job}</p>
+          <p id="Namecard-location">{location === '' ? 'select in location on the form on the left' : location}</p>
 
         </div>
 
